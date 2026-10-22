@@ -182,6 +182,17 @@ h1,h2,h3,h4,nav,.btn,.eyebrow{font-family:'Poppins',sans-serif;}
 .form-group select option{background:#162f42;color:#fff;}
 .form-group textarea{resize:vertical;min-height:120px;}
 
+/* riscom one */
+#riscom-one{position:relative;overflow:hidden;}
+.one-card{position:relative;z-index:1;display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:center;background:var(--bg-card);border:1px solid var(--border);border-radius:24px;padding:56px;backdrop-filter:blur(12px);}
+.one-card .section-sub{max-width:520px;}
+.one-features{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:28px;}
+.one-features li{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.55;color:var(--w60);font-family:'Merriweather';font-weight:300;}
+.one-features li::before{content:'→';color:#64A1D3;font-family:'Poppins';font-weight:700;flex-shrink:0;}
+.one-access{display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding:32px;border-radius:20px;background:linear-gradient(135deg,#1E4E6D,#2a6d94);}
+.one-access h3{font-size:19px;font-weight:800;color:#fff;}
+.one-access p{font-size:12px;line-height:1.7;color:rgba(255,255,255,.7);font-family:'Merriweather';font-weight:300;}
+
 /* footer */
 footer{background:var(--bg);border-top:1px solid var(--border);padding:64px 0 32px;}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid var(--border);}
@@ -210,7 +221,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:64px 0 32
   #navbar{padding:0 24px;}
   .nav-links,#navbar .btn{display:none;}
   .hamburger{display:flex;}
-  .hero-grid,.about-grid,.why-grid,.contact-grid{grid-template-columns:1fr;gap:40px;}
+  .hero-grid,.about-grid,.why-grid,.contact-grid,.one-card{grid-template-columns:1fr;gap:40px;}
+  .one-card{padding:36px 28px;}
   .hero-visual{display:none;}
   .divisions-grid{grid-template-columns:1fr;}
   .blog-grid{grid-template-columns:1fr;}
@@ -544,6 +556,30 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:64px 0 32
           <div class="form-group"><label>Mensaje</label><textarea name="mensaje" placeholder="Cuéntanos brevemente sobre tu empresa y qué necesitas..." required></textarea></div>
           <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Enviar mensaje →</button>
         </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RISCOM ONE -->
+<section id="riscom-one" class="section-pad">
+  <div class="blob" style="width:500px;height:500px;top:-150px;left:-150px;background:radial-gradient(circle,rgba(100,161,211,.08) 0%,transparent 70%);"></div>
+  <div class="container">
+    <div class="one-card fade-in">
+      <div>
+        <span class="eyebrow">Plataforma interna</span>
+        <h2 class="section-title">RISCOM <span>One</span></h2>
+        <p class="section-sub">Sistema de gestión de servicios de RISCOM: clientes, proyectos, horas y facturación en un solo lugar.</p>
+        <ul class="one-features">
+          <li>Clientes, servicios y proyectos</li>
+          <li>Control de horas y tablero de tareas</li>
+          <li>Control de facturación</li>
+        </ul>
+      </div>
+      <div class="one-access">
+        <h3>Acceso a la plataforma</h3>
+        <p>Ingresa con tu usuario autorizado de RISCOM.</p>
+        <a href="https://one.ris-com.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Acceder a RISCOM One →</a>
       </div>
     </div>
   </div>
